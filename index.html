@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <title>Winning Wheel</title>
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+  <body>
+    <div class="wheel-container">
+      <div class="canvas-wrap">
+        <canvas id='canvas' width='750' height='800'>
+          Canvas not supported, use another browser.
+        </canvas>
+      </div>
+
+      <div class="settings-wrap">
+        <h1>Design Patterns</h1>
+
+        <ul>
+          <li>
+            <p>Creational</p>
+            <span class="Creational"></span>
+          </li>
+          <li>
+            <p>Structural</p>
+            <span class="Structural"></span>
+          </li>
+          <li>
+            <p>Behaviour</p>
+            <span class="Behaviour"></span>
+          </li>
+        </ul>
+
+        <img class="spin-img" src="images/spin.jpg" onClick="wheel.startAnimation();" alt="spin">
+        <!--<button onclick="spinWheel.stopAnimation(); spinWheel.rotationAngle=0; spinWheel.draw(); bigButton.disabled=false;"></button>
+        <button class="add" onClick="addSegment();">Add Segment</button>
+        <button class="delete" onClick="deleteSegment();">Delete Segment</button>
+        <button class="stop" onClick="theWheel.stopAnimation();">Stop Animation</button>-->
+
+      </div>
+    </div>
+  </body>
+
+<!-- Libs -->
+<script src='./libs/TweenMax.js'></script>
+<script src='./libs/Winwheel.js'></script>
+<!-- Libs -->
+
+<script src='./js/index.js'></script>
+</html>
+
+<!-- Источник: http://dougtesting.net/winwheel/examples/wheel_of_fortune -->
